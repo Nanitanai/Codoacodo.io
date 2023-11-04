@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'> 
+    <title>BS AS</title>    
+</head>
+<!--Navbar-->
+<section class="fixed-top flex-row"> 
+  <nav class="navbar py-2 px-5 px-md-10 navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="./imagenes_integrador_front/codoacodo.png" alt="" width="20%">
+      Conf Bs As
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+         <a class="nav-link" href="">La conferencia</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="">Los oradores</a>
+      </li>
+      <li class="nav-item active">
+       <a class="nav-link" href="https://mapa.buenosaires.gob.ar/comollego/?lat=-34.620000&lng=-58.440000&zl=12&modo=transporte">El lugar y la fecha</a>
+     </li>
+      <li class="nav-item active">
+       <a class="nav-link" href="">Conviértete en orador</a>
+     </li>
+     <li class="nav-item active">
+      <a class="nav-link text-success" href="Tickets.html">Comprar tickets</a>
+    </li>
+    </ul>
+  </nav>
+</section>
+<!--cuerpo-->
+<body>
+   <!--Tarjetas-->
+   <div class="row row-cols-1 row-cols-md-3 g-4">
+     <div class="col">
+        <div class="card h-100 border-primary">
+          <div class="card-body">
+            <H6>Estudiante</H6>
+            <p>Tienen un descuento</p>
+            <p>de</p>
+            <br>
+            <P class="card-subtitle"><b>80%</b><P>
+            <br>
+            <p class="doc">*Debe presentar documentación</p>
+          </div>
+        </div>
+     </div>
+      <div class="col">
+        <div class="card h-100 border-info">
+          <div class="card-body">
+            <H6>Trainee</H6>
+            <p>Tienen un descuento</p>
+            <p>de</p>
+            <br>
+            <P class="card-subtitle"><b>50%</b></P>
+            <br>
+            <p class="doc">*Debe presentar documentación</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-warning">
+          <div class="card-body">
+            <H6>Junior</H6>
+            <p>Tienen un descuento</p>
+            <p>de</p>
+            <br>
+            <P class="card-subtitle"><b>15%</b></P>
+            <br>
+            <p class="doc">*Debe presentar documentación</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Forms-->
+    <p><b><h3>VALOR DE TICKET $200</h3></b><br></p>
+    <div class="row g-sm-2 align-content-center">
+      <div class="col">
+         <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+      </div>
+      <div class="col">
+         <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+      </div>
+      <div class="mb-1">
+        <label for="exampleFormControlInput1" class="form-label"></label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo Electronico">
+      </div>
+      <!--CANTIDAD-->
+      <div class="row g-sm-2">
+        <div class="col">
+          <p>Cantidad</p>
+         <input type="number" class="form-control" placeholder="Cantidad">
+       </div>
+       <div class="col">
+         <p>Categoria</p>
+         <select class="form-select">
+           <option value="1">Estudiante</option>
+           <option value="2">Trainee</option>
+           <option value="3">Junior</option>
+         </select>
+       </div>
+      </div>
+      <!--TOTAL A PAGAR-->
+     <div class="alert alert-primary g-4" role="alert">
+        Total a pagar $ 
+      </div>
+      <br>
+      <!--BOTONES-->
+      <div class="row mx-auto gap-2 ">
+        <div class="col">
+          <button type="button" class="btn btn-success" type="reset" value="Reset">Borrar</button>
+        </div>
+       <div class="col">
+         <button type="button" class="btn btn-success" type="submit" value="Submit">Resumen</button>
+       </div>
+      </div>
+    </div>
+</body>
+<!--Footer-->
+<footer class="col py-2 px-5 px-md-10 text-center text-light">
+   <ul class="list-inline">
+    <li class="list-inline-item" href="http://buenosaires.gob.ar/preguntas-frecuentes-4">Preguntas frecuentes</li>
+    <li class="list-inline-item" href="info@bsas.com">Contactanos</li>
+    <li class="list-inline-item" href="https://buenosaires.gob.ar/educacion/codocodo/el-programa">Prensa</li>
+    <li class="list-inline-item" href="https://boletinoficial.buenosaires.gob.ar">Conferencias</li>
+    <li class="list-inline-item" href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones">Términos y condiciones</li>
+    <li class="list-inline-item" href="https://boletinoficial.buenosaires.gob.ar/normasDestacadas">Privacidad</li>
+    <li class="list-inline-item" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiewoHy8ueBAxXSr5UCHRotDtcQFnoECAkQAQ&url=http%3A%2F%2Fbuenosaires.gob.ar%2Fnoticias%2Flos-egresados-de-codo-codo-ingresan-becas-para-capacitarse&usg=AOvVaw3HUpVUlJd0zwbt9bm5j6Jc&opi=89978449">Estudiantes</li>
+   </ul>
+</footer>
+</html>
