@@ -36,6 +36,7 @@
 </section>
 <!--cuerpo-->
 <body>
+   <script src="Script.js"></script>
    <!--Tarjetas-->
    <div class="row row-cols-1 row-cols-md-3 g-4">
      <div class="col">
@@ -81,43 +82,45 @@
     <!--Forms-->
     <p><b><h3>VALOR DE TICKET $200</h3></b><br></p>
     <div class="row g-sm-2 align-content-center">
-      <div class="col">
-         <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
-      </div>
-      <div class="col">
-         <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
-      </div>
-      <div class="mb-1">
-        <label for="exampleFormControlInput1" class="form-label"></label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo Electronico">
-      </div>
+      <form id="form ">
+        <label for="nombre"></label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+        <label for="apellido"></label>
+        <input type="text" id="apellido" name="apellido" required>
+        <br>
+        <label for="email"></label>
+        <input type="email" id="email" name="email" required>
+        <br>
+      </form>
       <!--CANTIDAD-->
       <div class="row g-sm-2">
         <div class="col">
-          <p>Cantidad</p>
-         <input type="number" class="form-control" placeholder="Cantidad">
-       </div>
+         <label for="cantidad">Cantidad</label>
+         <input id="cantidad" type="number"  class="form-control" placeholder="Cantidad"  min="1" value="1">
+        </div>
+       <!--Categoria-->
        <div class="col">
-         <p>Categoria</p>
-         <select class="form-select">
-           <option value="1">Estudiante</option>
-           <option value="2">Trainee</option>
-           <option value="3">Junior</option>
+         <label for="categoria">Categoria</label>
+         <select id="categoria" class="form-select">
+           <option value="estudiante">Estudiante</option>
+           <option value="trainee">Trainee</option>
+           <option value="junior">Junior</option>
          </select>
        </div>
-      </div>
+    </div>
       <!--TOTAL A PAGAR-->
      <div class="alert alert-primary g-4" role="alert">
-        Total a pagar $ 
+        Total a pagar :$ <span id="total">0</span>
       </div>
       <br>
       <!--BOTONES-->
       <div class="row mx-auto gap-2 ">
         <div class="col">
-          <button type="button" class="btn btn-success" type="reset" value="Reset">Borrar</button>
+          <button type="reset" id="buttonBorrar" class="btn btn-success btn-block">Borrar</button>
         </div>
        <div class="col">
-         <button type="button" class="btn btn-success" type="submit" value="Submit">Resumen</button>
+         <button id="calcular" type="button"  class="btn btn-success btn-block">Resumen</button>
        </div>
       </div>
     </div>
